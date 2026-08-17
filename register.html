@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - BitWise</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <style>
+
+        body {
+            min-height: 100vh;
+            background: #3a1f4d;
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+        }
+
+        .register-card {
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-col {
+            background: rgba(60, 30, 80, 0.95);
+            color: white;
+        }
+
+        .brand {
+            font-size: 48px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .brand span {
+            color: #ff7a45;
+        }
+
+        .brand-sub {
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .glass-input {
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 11px 14px;
+            border-radius: 8px;
+        }
+
+        .glass-input::placeholder {
+            color: rgba(255, 255, 255, 0.65);
+        }
+
+        .glass-input:focus {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.6);
+            color: white;
+            box-shadow: none;
+        }
+
+        .register-btn {
+            background: white;
+            color: #3a1f4d;
+            border-radius: 25px;
+            font-weight: 700;
+            padding: 10px;
+        }
+
+        .register-btn:hover {
+            background: #ff7a45;
+            color: white;
+        }
+
+        .image-col {
+            min-height: 550px;
+
+            background:
+                url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80')
+                center/cover no-repeat;
+        }
+
+        .image-overlay {
+            min-height: 550px;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    rgba(30, 10, 40, 0.2),
+                    rgba(50, 20, 70, 0.75)
+                );
+        }
+
+        .quote {
+            color: white;
+        }
+
+        .quote h1 {
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1.3;
+
+            text-shadow:
+                0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .quote p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="container py-5">
+
+        <div class="register-card row g-0 mx-auto"
+            style="max-width: 1000px;">
+
+
+            <!-- REGISTER FORM - LEFT -->
+
+            <div class="col-12 col-md-6 form-col p-4 p-md-5">
+
+
+                <!-- BRAND -->
+
+                <div class="brand mb-1">
+
+                    Bit<span>Wise</span>
+
+                </div>
+
+
+                <div class="brand-sub mb-4">
+
+                    Smart budgeting for a better future
+
+                </div>
+
+
+                <!-- TITLE -->
+
+                <h2 class="fw-semibold mb-4">
+
+                    Create Account
+
+                </h2>
+
+
+                <!-- FORM -->
+
+                <form id="registerForm">
+
+
+                    <!-- USERNAME -->
+
+                    <div class="mb-3">
+
+                        <label for="username"
+                            class="form-label small">
+
+                            Username
+
+                        </label>
+
+                        <input type="text"
+                            id="username"
+                            class="form-control glass-input"
+                            placeholder="Choose a username">
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="mb-3">
+
+                        <label for="email"
+                            class="form-label small">
+
+                            E-mail
+
+                        </label>
+
+                        <input type="email"
+                            id="email"
+                            class="form-control glass-input"
+                            placeholder="Enter your email">
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="mb-3">
+
+                        <label for="password"
+                            class="form-label small">
+
+                            Password
+
+                        </label>
+
+                        <input type="password"
+                            id="password"
+                            class="form-control glass-input"
+                            placeholder="Create a password">
+
+                    </div>
+
+
+                    <!-- REGISTER BUTTON -->
+
+                    <div class="d-flex justify-content-center">
+
+                        <button type="submit"
+                            class="btn register-btn w-50">
+
+                            <i class="bi bi-person-plus me-2"></i>
+
+                            Create Account
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- LOGIN LINK -->
+
+                    <p class="text-center small mt-4 mb-0"
+                        style="color: rgba(255,255,255,0.75);">
+
+                        Already have an account?
+
+                        <a href="login.html"
+                            class="fw-semibold text-white text-decoration-none">
+
+                            Log In
+
+                        </a>
+
+                    </p>
+
+
+                </form>
+
+            </div>
+
+
+            <!-- IMAGE - RIGHT -->
+
+            <div class="col-md-6 image-col d-none d-md-block">
+
+                <div class="image-overlay h-100 w-100
+                            d-flex align-items-end p-4">
+
+                    <div class="quote">
+
+                        <h1 class="mb-3">
+
+                            Start your journey<br>
+                            towards smarter<br>
+                            financial decisions.
+
+                        </h1>
+
+                        <p>
+
+                            Track your spending, plan your budget,
+                            and build a better financial future.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- REGISTER JAVASCRIPT -->
+
+    <script src="register.js"></script>
+
+</body>
+
+</html>
