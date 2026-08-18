@@ -16,6 +16,6 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
     }
 
     // Redirect to landing page
-    window.location.href = "landing.html";
+    window.location.href = "index.html";
 
 });

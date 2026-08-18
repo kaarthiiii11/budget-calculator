@@ -28,7 +28,7 @@
             color: #30263d;
         }
 
-        /* NAVBAR */
+        
 
         .navbar {
             background: #30203f;
@@ -52,14 +52,13 @@
         }
 
 
-        /* MAIN */
+       
 
         .main-section {
             min-height: 100vh;
         }
 
 
-        /* WELCOME */
 
         .welcome h1 {
             font-size: 32px;
@@ -71,7 +70,6 @@
         }
 
 
-        /* BALANCE */
 
         .balance-card {
             background: linear-gradient(
@@ -124,7 +122,6 @@
         }
 
 
-        /* ACTION CARDS */
 
         .action-card {
             background: white;
@@ -160,7 +157,6 @@
         }
 
 
-        /* INPUT */
 
         .form-control {
             border: 1px solid #ded7e5;
@@ -174,7 +170,7 @@
         }
 
 
-        /* BUTTONS */
+     
 
         .income-btn {
             background: #26945b;
@@ -205,7 +201,7 @@
         }
 
 
-        /* SUMMARY */
+       
 
         .summary-card {
             background: white;
@@ -236,7 +232,7 @@
         }
 
 
-        /* CHART */
+       
 
         .chart-card {
             background: white;
@@ -252,7 +248,7 @@
         }
 
 
-        /* ACTIVITY */
+      
 
         .activity-card {
             background: white;
@@ -327,7 +323,7 @@
 <body>
 
 
-<!-- ================= NAVBAR ================= -->
+<!-- Navbar -->
 
 <nav class="navbar">
 
@@ -364,14 +360,14 @@
 
 
 
-<!-- ================= MAIN ================= -->
+<!-- MAIN -->
 
 <main class="main-section py-5">
 
     <div class="container">
 
 
-        <!-- ================= WELCOME ================= -->
+        <!-- WELCOME  -->
 
         <div class="welcome mb-4 d-flex justify-content-between
                     align-items-center flex-wrap gap-3">
@@ -405,7 +401,7 @@
 
 
 
-        <!-- ================= BALANCE ================= -->
+        <!-- BALANCE  -->
 
         <div class="balance-card mb-4">
 
@@ -478,12 +474,12 @@
 
 
 
-        <!-- ================= ADD INCOME / EXPENSE ================= -->
+        <!-- ADD INCOME / EXPENSE  -->
 
         <div class="row g-4 mb-4">
 
 
-            <!-- ================= ADD INCOME ================= -->
+            <!--  ADD INCOME  -->
 
             <div class="col-lg-6">
 
@@ -555,7 +551,7 @@
 
 
 
-            <!-- ================= ADD EXPENSE ================= -->
+            <!--  ADD EXPENSE -->
 
             <div class="col-lg-6">
 
@@ -632,12 +628,12 @@
 
 
 
-        <!-- ================= SUMMARY + CHART + ACTIVITY ================= -->
+        <!--  SUMMARY + CHART + ACTIVITY = -->
 
         <div class="row g-4">
 
 
-            <!-- ================= MONEY SUMMARY ================= -->
+            <!--  MONEY SUMMARY  -->
 
             <div class="col-lg-4">
 
@@ -772,7 +768,7 @@
 
 
 
-            <!-- ================= EXPENSE BREAKDOWN ================= -->
+            <!--  EXPENSE BREAKDOWN  -->
 
             <div class="col-lg-4">
 
@@ -806,7 +802,7 @@
 
 
 
-            <!-- ================= RECENT ACTIVITY ================= -->
+            <!--  RECENT ACTIVITY  -->
 
             <div class="col-lg-4">
 
@@ -850,7 +846,7 @@
 
 
 
-<!-- ================= JAVASCRIPT ================= -->
+<!--  JAVASCRIPT  -->
 
 <script>
 
@@ -861,7 +857,7 @@ let expenseChart = null;
 
 
 
-/* ================= FORMAT MONEY ================= */
+/*  FORMAT MONEY  */
 
 function formatMoney(amount) {
 
@@ -871,7 +867,7 @@ function formatMoney(amount) {
 
 
 
-/* ================= ADD INCOME ================= */
+/*  ADD INCOME  */
 
 function addIncome() {
 
@@ -932,7 +928,7 @@ function addIncome() {
 
 
 
-/* ================= ADD EXPENSE ================= */
+/*  ADD EXPENSE  */
 
 function addExpense() {
 
@@ -993,7 +989,7 @@ function addExpense() {
 
 
 
-/* ================= SAVE ================= */
+/*  SAVE  */
 
 function saveTransactions() {
 
@@ -1006,7 +1002,7 @@ function saveTransactions() {
 
 
 
-/* ================= UPDATE DASHBOARD ================= */
+/*  UPDATE DASHBOARD */
 
 function updateDashboard() {
 
@@ -1063,7 +1059,7 @@ function updateDashboard() {
 
 
 
-/* ================= DYNAMIC PIE CHART ================= */
+/*  DYNAMIC PIE CHART  */
 
 function updateChart() {
 
@@ -1234,7 +1230,7 @@ function updateChart() {
 
 
 
-/* ================= DYNAMIC CHART LEGEND ================= */
+/*  DYNAMIC CHART LEGEND  */
 
 function updateChartLegend(categories) {
 
@@ -1322,7 +1318,7 @@ function updateChartLegend(categories) {
 
 
 
-/* ================= ACTIVITY ================= */
+/*  ACTIVITY  */
 
 function updateActivity() {
 
@@ -1471,7 +1467,7 @@ function updateActivity() {
 
 
 
-/* ================= CLEAR ALL RECORDS ================= */
+/*  CLEAR ALL RECORDS  */
 
 function clearAllRecords() {
 
@@ -1509,7 +1505,7 @@ function clearAllRecords() {
 
 
 
-/* ================= PROFILE NAME ================= */
+/*  PROFILE NAME */
 
 function loadProfile() {
 
@@ -1535,7 +1531,7 @@ function loadProfile() {
 
 
 
-/* ================= LOGOUT ================= */
+/*  LOGOUT  */
 
 function logoutUser() {
 
@@ -1559,7 +1555,7 @@ function logoutUser() {
 
 
 
-/* ================= PAGE LOAD ================= */
+/*  PAGE LOAD  */
 
 loadProfile();
 

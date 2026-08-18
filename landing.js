@@ -4,7 +4,7 @@ let transactions =
 let expenseChart = null;
 
 
-/* ================= FORMAT MONEY ================= */
+/*  FORMAT MONEY  */
 
 function formatMoney(amount) {
 
@@ -13,7 +13,7 @@ function formatMoney(amount) {
 }
 
 
-/* ================= ADD INCOME ================= */
+/*  ADD INCOME  */
 
 function addIncome() {
 
@@ -73,7 +73,7 @@ function addIncome() {
 }
 
 
-/* ================= ADD EXPENSE ================= */
+/*  ADD EXPENSE  */
 
 function addExpense() {
 
@@ -133,7 +133,7 @@ function addExpense() {
 }
 
 
-/* ================= SAVE TRANSACTIONS ================= */
+/*  SAVE TRANSACTIONS */
 
 function saveTransactions() {
 
@@ -145,7 +145,7 @@ function saveTransactions() {
 }
 
 
-/* ================= UPDATE DASHBOARD ================= */
+/*  UPDATE DASHBOARD  */
 
 function updateDashboard() {
 
@@ -218,7 +218,7 @@ function updateDashboard() {
 }
 
 
-/* ================= UPDATE CHART ================= */
+/*  UPDATE CHART  */
 
 function updateChart() {
 
@@ -289,7 +289,7 @@ function updateChart() {
         document.getElementById("expenseChart");
 
 
-    /* ================= NO EXPENSES ================= */
+    /*  NO EXPENSES  */
 
     if (labels.length === 0) {
 
@@ -348,7 +348,7 @@ function updateChart() {
     }
 
 
-    /* ================= CHART COLORS ================= */
+    /*  CHART COLORS  */
 
     let colors = [
 
@@ -399,7 +399,7 @@ function updateChart() {
     });
 
 
-    /* ================= CREATE CHART ================= */
+    /*  CREATE CHART  */
 
     expenseChart = new Chart(ctx, {
 
@@ -472,7 +472,7 @@ function updateChart() {
 }
 
 
-/* ================= UPDATE CHART LEGEND ================= */
+/*  UPDATE CHART LEGEND  */
 
 function updateChartLegend(categories) {
 
@@ -575,7 +575,7 @@ function updateChartLegend(categories) {
 }
 
 
-/* ================= UPDATE ACTIVITY ================= */
+/*  UPDATE ACTIVITY */
 
 function updateActivity() {
 
@@ -624,7 +624,7 @@ function updateActivity() {
         let iconClass = "salary";
 
 
-        /* ================= EXPENSE ICONS ================= */
+        /*  EXPENSE ICONS  */
 
         if (transaction.type === "expense") {
 
@@ -708,7 +708,7 @@ function updateActivity() {
         }
 
 
-        /* ================= SIGN ================= */
+        /*  SIGN  */
 
         let sign =
             transaction.type === "income"
@@ -716,7 +716,7 @@ function updateActivity() {
                 : "-";
 
 
-        /* ================= AMOUNT COLOR ================= */
+        /*  AMOUNT COLOR */
 
         let amountClass =
             transaction.type === "income"
@@ -724,7 +724,7 @@ function updateActivity() {
                 : "expense-text";
 
 
-        /* ================= ACTIVITY HTML ================= */
+        /*  ACTIVITY HTML  */
 
         html += `
 
@@ -783,7 +783,7 @@ function updateActivity() {
 }
 
 
-/* ================= CLEAR ALL RECORDS ================= */
+/*  CLEAR ALL RECORDS  */
 
 function clearAllRecords() {
 
@@ -839,7 +839,7 @@ function clearAllRecords() {
 }
 
 
-/* ================= PROFILE ================= */
+/*  PROFILE  */
 
 function loadProfile() {
 
@@ -868,7 +868,7 @@ function loadProfile() {
 }
 
 
-/* ================= LOGOUT ================= */
+/*  LOGOUT  */
 
 function logoutUser() {
 
@@ -926,7 +926,7 @@ function logoutUser() {
 }
 
 
-/* ================= PAGE LOAD ================= */
+/* PAGE LOAD*/
 
 loadProfile();
 
